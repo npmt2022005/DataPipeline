@@ -1,0 +1,57 @@
+{
+  "datasets": {
+    "vi": {
+      "documents": 10576,
+      "queries": 9985,
+      "qrels": 11158,
+      "empty_document_ids": [],
+      "empty_query_ids": [],
+      "relevance_values": [
+        1
+      ],
+      "unique_ids": true,
+      "qrels_references_valid": true
+    },
+    "en": {
+      "documents": 3633,
+      "queries": 323,
+      "qrels": 12334,
+      "empty_document_ids": [],
+      "empty_query_ids": [],
+      "relevance_values": [
+        1,
+        2
+      ],
+      "unique_ids": true,
+      "qrels_references_valid": true
+    }
+  },
+  "input_sha256": {
+    "data\\raw\\en\\nfcorpus\\corpus.jsonl": "10cc83ef1826b1425e6a87090b5140b39b27755d5a27e48215a88611c899991f",
+    "data\\raw\\en\\nfcorpus\\qrels\\dev.tsv": "b1d38b5e8f78c4a5820bce2b7ec2db54911d7690dc601e76811846b211180bd8",
+    "data\\raw\\en\\nfcorpus\\qrels\\test.tsv": "f8fba6ef3d4dd9c3a242a8ba4ae38276fc3622fce7dcbae764766d564542fd2a",
+    "data\\raw\\en\\nfcorpus\\qrels\\train.tsv": "6336b80f9bffc4f063f3aa450047ad35c0b7c534efe4a6ba35e16dbace047f6a",
+    "data\\raw\\en\\nfcorpus\\queries.jsonl": "d024e6621b84925d485ae473d316a0c3af31c62c8068a59fb29d22f7613aef2a",
+    "data\\raw\\en\\nfcorpus.zip": "efe5be03f8c5b86a5870102d0599d227c8c6e2484328e68c6522560385671b0b",
+    "data\\raw\\vi\\corpus.parquet": "0542499d5fa835ed596631091252a175e90c15defdd4a3935fecbf871e3622b9",
+    "data\\raw\\vi\\qrels.parquet": "d5bc9188fbaae8acead68cf32a1df80389f43808d841ea624b29b7477c07540d",
+    "data\\raw\\vi\\queries.parquet": "ef8f768be7c2a9140d305b903ead797cb119a14d3d8494e76755673c975d635d"
+  },
+  "vi_schema": {
+    "corpus": "id: string\ntitle: string\ntext: string\n-- schema metadata --\nhuggingface: '{\"info\": {\"features\": {\"id\": {\"dtype\": \"string\", \"_type\": \"' + 105",
+    "queries": "id: string\ntext: string\n-- schema metadata --\nhuggingface: '{\"info\": {\"features\": {\"id\": {\"dtype\": \"string\", \"_type\": \"' + 57",
+    "qrels": "query-id: string\ncorpus-id: string\nscore: int64\n-- schema metadata --\nhuggingface: '{\"info\": {\"features\": {\"query-id\": {\"dtype\": \"string\", \"_ty' + 115"
+  },
+  "english_all_split_queries": 3237,
+  "raw_unchanged": true,
+  "output_roundtrip_verified": true,
+  "output_sha256": {
+    "data\\canonical\\vi\\corpus.jsonl": "8f779eb6e18b53280b5165880e9000766fe51b39b13145ddb46713477a42ca0c",
+    "data\\canonical\\vi\\qrels.csv": "ef0f61c29a64647c2c180bd3d5bcc8f4144d32ed670330b66e8bf665906be18c",
+    "data\\canonical\\vi\\queries.jsonl": "4448138b630d059fca1c5eb61e42a243ca6f8a9ea68a1990ec1e176050a8c632",
+    "data\\canonical\\en\\corpus.jsonl": "a58479b3d83008c042107d524b6cf589698d01549123ce7ef905ab964fbf3f60",
+    "data\\canonical\\en\\qrels.csv": "ebee65670f77016fcea09cbf8426aa1928c427e3cc5e37866c920635ced4320b",
+    "data\\canonical\\en\\queries.jsonl": "1a5d75590c1a1969a3946f257ef5b0f6a0800acf5c2db075e36dc4449a92bd43"
+  },
+  "repeated_run_identical": true
+}

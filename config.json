@@ -1,0 +1,19 @@
+{
+  "variants": [
+    "original",
+    "stopword",
+    "normalize",
+    "tokenize",
+    "combined"
+  ],
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "normalization": "lowercase; keep Unicode letters/marks and digits; replace others with spaces; collapse whitespace",
+  "vi_tokenizer": "underthesea.word_tokenize(format=text, use_token_normalize=False)",
+  "en_tokenizer": "nltk.tokenize.TreebankWordTokenizer (no Punkt download)",
+  "stopword_matching": "case-insensitive; longest phrase first; raw word boundaries; internal whitespace only; collapse whitespace after removal",
+  "combined_stopwords": "tokenize each normalized stopword using the same language tokenizer; match longest token sequence",
+  "empty_records": "preserve all IDs; report empty records; evaluator must use the same queries for every variant"
+}

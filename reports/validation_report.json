@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "datasets": {
+    "vi": {
+      "original": {
+        "corpus": {
+          "records": 10576,
+          "empty_ids": []
+        },
+        "queries": {
+          "records": 9985,
+          "empty_ids": []
+        }
+      },
+      "stopword": {
+        "corpus": {
+          "records": 10576,
+          "empty_ids": []
+        },
+        "queries": {
+          "records": 9985,
+          "empty_ids": []
+        }
+      },
+      "normalize": {
+        "corpus": {
+          "records": 10576,
+          "empty_ids": []
+        },
+        "queries": {
+          "records": 9985,
+          "empty_ids": []
+        }
+      },
+      "tokenize": {
+        "corpus": {
+          "records": 10576,
+          "empty_ids": []
+        },
+        "queries": {
+          "records": 9985,
+          "empty_ids": []
+        }
+      },
+      "combined": {
+        "corpus": {
+          "records": 10576,
+          "empty_ids": []
+        },
+        "queries": {
+          "records": 9985,
+          "empty_ids": []
+        }
+      }
+    },
+    "en": {
+      "original": {
+        "corpus": {
+          "records": 3633,
+          "empty_ids": []
+        },
+        "queries": {
+          "records": 323,
+          "empty_ids": []
+        }
+      },
+      "stopword": {
+        "corpus": {
+          "records": 3633,
+          "empty_ids": []
+        },
+        "queries": {
+          "records": 323,
+          "empty_ids": []
+        }
+      },
+      "normalize": {
+        "corpus": {
+          "records": 3633,
+          "empty_ids": []
+        },
+        "queries": {
+          "records": 323,
+          "empty_ids": []
+        }
+      },
+      "tokenize": {
+        "corpus": {
+          "records": 3633,
+          "empty_ids": []
+        },
+        "queries": {
+          "records": 323,
+          "empty_ids": []
+        }
+      },
+      "combined": {
+        "corpus": {
+          "records": 3633,
+          "empty_ids": []
+        },
+        "queries": {
+          "records": 323,
+          "empty_ids": []
+        }
+      }
+    }
+  },
+  "raw_and_canonical_unchanged": true,
+  "full_transform_recheck": true,
+  "recomputed_outputs_byte_identical": true
+}

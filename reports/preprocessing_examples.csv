@@ -1,0 +1,19 @@
+language,sample,original,stopword,normalize,tokenize,combined
+vi,0,Sinh viên có thể học tập!!!,Sinh viên học tập!!!,sinh viên có thể học tập,Sinh_viên có_thể học_tập ! ! !,sinh_viên học_tập
+vi,1,"HỌC,tập!!!  123","HỌC,tập!!! 123",học tập 123,"HỌC , tập ! ! ! 123",học_tập 123
+vi,2,và là,,và là,và là,
+vi,3,,,,,
+vi,4,!!!,!!!,,! ! !,
+vi,5,URL https://example.vn 😀,URL https://example.vn 😀,url https example vn,URL https://example.vn 😀,url https example vn
+vi,6,ĐÂY   là VĂN BẢN.,VĂN .,đây là văn bản,ĐÂY là VĂN_BẢN .,văn_bản
+vi,7,Người lao động được gia hạn trả nợ vay vốn để đi làm việc ở nước ngoài theo hợp đồng trong thời gian bao lâu?,lao động gia hạn nợ vay vốn đi hợp đồng ?,người lao động được gia hạn trả nợ vay vốn để đi làm việc ở nước ngoài theo hợp đồng trong thời gian bao lâu,Người lao_động được gia_hạn trả nợ vay vốn để đi làm_việc ở nước_ngoài theo hợp_đồng trong thời_gian bao_lâu ?,lao_động gia_hạn nợ vay vốn đi làm_việc nước_ngoài hợp_đồng
+vi,8,Nghĩa vụ của hội viên Hiệp hội Công nghiệp ghi âm Việt Nam là gì?,Nghĩa vụ hội viên Hiệp hội Công nghiệp ghi âm Việt Nam ?,nghĩa vụ của hội viên hiệp hội công nghiệp ghi âm việt nam là gì,Nghĩa_vụ của hội_viên Hiệp_hội Công_nghiệp ghi_âm Việt_Nam là gì ?,nghĩa_vụ hội_viên hiệp_hội công_nghiệp ghi_âm việt_nam
+en,0,THE theater and CAT!,theater CAT!,the theater and cat,THE theater and CAT !,theater cat
+en,1,Students cannot study.,Students cannot study.,students cannot study,Students can not study .,students study
+en,2,and the,,and the,and the,
+en,3,,,,,
+en,4,!!!,!!!,,! ! !,
+en,5,URL https://example.org 😀 123,URL https://example.org 😀 123,url https example org 123,URL https : //example.org 😀 123,url https example org 123
+en,6,"Mixed   CASE, punctuation!!!","Mixed CASE, punctuation!!!",mixed case punctuation,"Mixed CASE , punctuation ! ! !",mixed case punctuation
+en,7,Do Cholesterol Statin Drugs Cause Breast Cancer?,Cholesterol Statin Drugs Cause Breast Cancer?,do cholesterol statin drugs cause breast cancer,Do Cholesterol Statin Drugs Cause Breast Cancer ?,cholesterol statin drugs cause breast cancer
+en,8,Exploiting Autophagy to Live Longer,Exploiting Autophagy Live Longer,exploiting autophagy to live longer,Exploiting Autophagy to Live Longer,exploiting autophagy live longer

@@ -1,0 +1,74 @@
+{
+  "config": {
+    "variants": [
+      "original",
+      "stopword",
+      "normalize",
+      "tokenize",
+      "combined"
+    ],
+    "languages": [
+      "vi",
+      "en"
+    ],
+    "normalization": "lowercase; keep Unicode letters/marks and digits; replace others with spaces; collapse whitespace",
+    "vi_tokenizer": "underthesea.word_tokenize(format=text, use_token_normalize=False)",
+    "en_tokenizer": "nltk.tokenize.TreebankWordTokenizer (no Punkt download)",
+    "stopword_matching": "case-insensitive; longest phrase first; raw word boundaries; internal whitespace only; collapse whitespace after removal",
+    "combined_stopwords": "tokenize each normalized stopword using the same language tokenizer; match longest token sequence",
+    "empty_records": "preserve all IDs; report empty records; evaluator must use the same queries for every variant"
+  },
+  "versions": {
+    "underthesea": "9.5.0",
+    "nltk": "3.10.3",
+    "pyarrow": "25.0.1",
+    "pandas": "3.0.6"
+  },
+  "input_sha256": {
+    "data\\raw\\en\\nfcorpus\\corpus.jsonl": "10cc83ef1826b1425e6a87090b5140b39b27755d5a27e48215a88611c899991f",
+    "data\\raw\\en\\nfcorpus\\qrels\\dev.tsv": "b1d38b5e8f78c4a5820bce2b7ec2db54911d7690dc601e76811846b211180bd8",
+    "data\\raw\\en\\nfcorpus\\qrels\\test.tsv": "f8fba6ef3d4dd9c3a242a8ba4ae38276fc3622fce7dcbae764766d564542fd2a",
+    "data\\raw\\en\\nfcorpus\\qrels\\train.tsv": "6336b80f9bffc4f063f3aa450047ad35c0b7c534efe4a6ba35e16dbace047f6a",
+    "data\\raw\\en\\nfcorpus\\queries.jsonl": "d024e6621b84925d485ae473d316a0c3af31c62c8068a59fb29d22f7613aef2a",
+    "data\\raw\\en\\nfcorpus.zip": "efe5be03f8c5b86a5870102d0599d227c8c6e2484328e68c6522560385671b0b",
+    "data\\raw\\vi\\corpus.parquet": "0542499d5fa835ed596631091252a175e90c15defdd4a3935fecbf871e3622b9",
+    "data\\raw\\vi\\qrels.parquet": "d5bc9188fbaae8acead68cf32a1df80389f43808d841ea624b29b7477c07540d",
+    "data\\raw\\vi\\queries.parquet": "ef8f768be7c2a9140d305b903ead797cb119a14d3d8494e76755673c975d635d",
+    "data\\canonical\\en\\corpus.jsonl": "a58479b3d83008c042107d524b6cf589698d01549123ce7ef905ab964fbf3f60",
+    "data\\canonical\\en\\qrels.csv": "ebee65670f77016fcea09cbf8426aa1928c427e3cc5e37866c920635ced4320b",
+    "data\\canonical\\en\\queries.jsonl": "1a5d75590c1a1969a3946f257ef5b0f6a0800acf5c2db075e36dc4449a92bd43",
+    "data\\canonical\\vi\\corpus.jsonl": "8f779eb6e18b53280b5165880e9000766fe51b39b13145ddb46713477a42ca0c",
+    "data\\canonical\\vi\\qrels.csv": "ef0f61c29a64647c2c180bd3d5bcc8f4144d32ed670330b66e8bf665906be18c",
+    "data\\canonical\\vi\\queries.jsonl": "4448138b630d059fca1c5eb61e42a243ca6f8a9ea68a1990ec1e176050a8c632"
+  },
+  "resource_sha256": {
+    "resources\\stopwords\\en.txt": "f6d005956f407dbc6ea32e5ff0c7e8e6f71488d3239b9023efdc7fc139d6375b",
+    "resources\\stopwords\\en_source_README.txt": "e0365fde880eadb522f844cba2774529969b66b7406db7643cf260dcd77d6541",
+    "resources\\stopwords\\vi.txt": "724f5cb2b5611f6510ba3788122eafeb34f4425cc5693958b780b2788355c4fb"
+  },
+  "output_sha256": {
+    "data\\processed\\en\\combined\\corpus.jsonl": "abcf919cbe34944f1fb3709c3825491f9809a1c62f8e766f0223acb1db83ad9c",
+    "data\\processed\\en\\combined\\queries.jsonl": "c893fcacc0cee05e5bd2f3b53f9cb3a673a77bdb0a8945403cc93a4700259ed1",
+    "data\\processed\\en\\normalize\\corpus.jsonl": "3a764682b6df234852fe1d1203291b76e99a7a51c34ecb182da52a739cb37ce7",
+    "data\\processed\\en\\normalize\\queries.jsonl": "affc657403fb44170e1f28b8251ee5843ab75e5f4c978376feebfdb2304571f8",
+    "data\\processed\\en\\original\\corpus.jsonl": "a58479b3d83008c042107d524b6cf589698d01549123ce7ef905ab964fbf3f60",
+    "data\\processed\\en\\original\\queries.jsonl": "1a5d75590c1a1969a3946f257ef5b0f6a0800acf5c2db075e36dc4449a92bd43",
+    "data\\processed\\en\\qrels.csv": "ebee65670f77016fcea09cbf8426aa1928c427e3cc5e37866c920635ced4320b",
+    "data\\processed\\en\\stopword\\corpus.jsonl": "57457d91e675b7f362495461be83bb3dae5e20925e0a1036fc024d6029a5a8f2",
+    "data\\processed\\en\\stopword\\queries.jsonl": "1b079017e8f01dc1f952e8d7c3e5b5f0c75f33968a97cb4e8f7d019da70554b9",
+    "data\\processed\\en\\tokenize\\corpus.jsonl": "5860d3a26fd75348bacf4736d3768385cbbc144226d0731855c5ea0d3429b302",
+    "data\\processed\\en\\tokenize\\queries.jsonl": "fc773e0872c9c1d2eee1e650c35d0f1f441f69153c0c9fd64223fa731f63292f",
+    "data\\processed\\vi\\combined\\corpus.jsonl": "51264d3f6f2568add563cf6549232ad563e885cbebb2ace28c39f7a6f8d2823e",
+    "data\\processed\\vi\\combined\\queries.jsonl": "76222fe3cb8013556bd392d722728b00c83081bf51b6177e8a7b90b8c6c2bcc3",
+    "data\\processed\\vi\\normalize\\corpus.jsonl": "5f55cb3f3e6860644a5ae19f9d68f69f5dadeb359f6acd9ae7b988289d783bdd",
+    "data\\processed\\vi\\normalize\\queries.jsonl": "b90801269ca599fb5fa0e3e8d4303fd36a4cf2e31994197c4061e950edd35a0e",
+    "data\\processed\\vi\\original\\corpus.jsonl": "8f779eb6e18b53280b5165880e9000766fe51b39b13145ddb46713477a42ca0c",
+    "data\\processed\\vi\\original\\queries.jsonl": "4448138b630d059fca1c5eb61e42a243ca6f8a9ea68a1990ec1e176050a8c632",
+    "data\\processed\\vi\\qrels.csv": "ef0f61c29a64647c2c180bd3d5bcc8f4144d32ed670330b66e8bf665906be18c",
+    "data\\processed\\vi\\stopword\\corpus.jsonl": "ce0c0d512240e4a105ed541033fdf44a563dce62e01a0457a885264cee7147b3",
+    "data\\processed\\vi\\stopword\\queries.jsonl": "84d46de1c812dbbf1194f915b7a04fbfca4524a2f72ac251d5544cf5c454cac8",
+    "data\\processed\\vi\\tokenize\\corpus.jsonl": "cd1f2a520d0934ac6726b2d56aca410d8bceeec7b1652272f1732430efdb678c",
+    "data\\processed\\vi\\tokenize\\queries.jsonl": "903599c6a4f90ec8654e0ef59de2bfc8930492032d2c80f09db2633c7f9b19ab"
+  },
+  "length_unit": "Unicode code points, not tokens"
+}

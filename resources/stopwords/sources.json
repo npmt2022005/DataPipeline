@@ -1,0 +1,14 @@
+{
+  "vi": {
+    "url": "https://raw.githubusercontent.com/stopwords/vietnamese-stopwords/master/vietnamese-stopwords.txt",
+    "download_date": "2026-10-08",
+    "sha256": "724f5cb2b5611f6510ba3788122eafeb34f4425cc5693958b780b2788355c4fb",
+    "modifications": "None; loader ignores blank lines and deduplicates lowercase entries."
+  },
+  "en": {
+    "url": "https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/stopwords.zip",
+    "download_date": "2026-10-08",
+    "sha256": "f6d005956f407dbc6ea32e5ff0c7e8e6f71488d3239b9023efdc7fc139d6375b",
+    "modifications": "None; loader ignores blank lines and deduplicates lowercase entries."
+  }
+}
